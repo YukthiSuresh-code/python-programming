@@ -1,3 +1,42 @@
+ALGORITHM:
+Aim: To demonstrate various list operations and related functions in Python.
+
+Steps
+
+Start the program.
+
+Create a list list1 = [10, 20, "apple", "banana", 30, "grape"].
+
+Display the original list.
+
+Display the first element of the list using indexing [0].
+
+Display the last element using negative indexing [-1].
+
+Display elements from index 0 to 2 using slicing [0:3].
+
+Display elements from index 2 to 4 using slicing [2:5].
+
+Add a new element "Kiwi" to the list using append() and display the updated list.
+
+Insert "orange" at position 4 using insert() and display the updated list.
+
+Remove "banana" from the list using remove() and display the updated list.
+
+Count the number of times "Kiwi" appears using count() and display it.
+
+Remove the element at index 5 using pop() and display the updated list.
+
+Reverse the list using reverse() and display the reversed list.
+
+Find the index of "Kiwi" using index() and display it.
+
+Clear all elements from the list using clear() and display the empty list.
+
+Stop the program.
+
+
+
 list1 = [10, 20, "apple", "banana", 30, "grape"]
 print("Original List:", list1)
 
