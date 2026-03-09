@@ -1,0 +1,222 @@
+Experiment 1
+Arithematic operators
+# Input values
+a = int(input("Enter value for a: "))
+b = int(input("Enter value for b: "))
+
+# a) (a + b)^2 = a^2 + 2ab + b^2
+LHS = (a + b) * (a + b)
+RHS = (a * a) + (2 * a * b) + (b * b)
+print("\n(a + b)^2 = a^2 + 2ab + b^2")
+print("Result:", LHS == RHS)
+
+output:
+Enter value for a: 5
+Enter value for b: 6
+
+(a + b)^2 = a^2 + 2ab + b^2
+Result: True
+
+b) (a - b)^2 = a^2 - 2ab + b^2
+LHS = (a - b) * (a - b)
+RHS = (a * a) - (2 * a * b) + (b * b)
+
+print("\n(a - b)^2 = a^2 - 2ab + b^2")
+print("Result:", LHS == RHS)
+
+output:
+Enter value for a: 4
+Enter value for b: 5
+
+(a - b)^2 = a^2 - 2ab + b^2
+Result: True
+
+c)(a + b)(a - b) = a^2 - b^2
+a = int(input("Enter value for a: "))
+b = int(input("Enter value for b: "))
+
+
+LHS = (a + b) * (a - b)
+RHS = (a * a) - (b * b)
+
+print("\n(a + b)(a - b) = a^2 - b^2")
+print("Result:", LHS == RHS)
+
+output:
+Enter value for a: 6
+Enter value for b: 8
+
+(a + b)(a - b) = a^2 - b^2
+Result: True
+
+d)(a + b)(a + b) = 2a^2 - b^2
+a = int(input("Enter value for a: "))
+b = int(input("Enter value for b: "))
+LHS = (a + b) * (a + b)
+RHS = (2 * (a * a)) - (b * b)
+
+print("\n(a + b)(a + b) = 2a^2 - b^2")
+print("Result:", LHS == RHS)
+
+ouptut:
+Enter value for a: 10
+Enter value for b: 12
+
+(a + b)(a + b) = 2a^2 - b^2
+Result: False
+
+
+BITWISE OPERATORS
+(a)  a | b = (a ^ b) + (a & b)
+a = 12
+b = 13
+
+LHS = a | b
+RHS = (a ^ b) + (a & b)
+
+print("2(a) Result:", LHS == RHS)
+
+OUTPUT:
+Enter value for a: 10
+Enter value for b: 15
+ Result: True
+
+(b)  a ^ (a & b) = (a | b) ^ b
+a = int(input("Enter value for a: "))
+b = int(input("Enter value for b: "))
+
+LHS = a ^ (a & b)
+RHS = (a | b) ^ b
+
+print(" Result:", LHS == RHS)
+
+OUTPUT:
+Enter value for a: 10
+Enter value for b: 15
+ Result: True
+
+(c)  b ^ (a & b) = (a | b) ^ a
+LHS = b ^ (a & b)
+RHS = (a | b) ^ a
+
+print("2(c) Result:", LHS == RHS)
+
+OUTPUT:
+Enter value for a: 14
+Enter value for b: 15
+ Result: True
+
+(d)  (a & b) ^ (a | b) = a ^ b
+a = int(input("Enter value for a: "))
+b = int(input("Enter value for b: "))
+
+LHS = (a & b) ^ (a | b)
+RHS = a ^ b
+
+print("2(d) Result:", LHS == RHS)
+
+OUTPUT:
+Enter value for a: 12
+Enter value for b: 13
+Result: True
+ 
+ADDITION :
+
+(a)  (a + b) = (a | b) + (a & b)
+a = int(input("Enter value for a: "))
+b = int(input("Enter value for b: "))
+
+LHS = a + b
+RHS = (a | b) + (a & b)
+
+print("3(a) Result:", LHS == RHS)
+
+OUTPUT:
+
+Enter value for a: 20
+Enter value for b: 50
+ Result: True
+
+(b)  (a + b) = (a ^ b) + 2 * (a & b)
+a = int(input("Enter value for a: "))
+b = int(input("Enter value for b: "))
+
+LHS = a + b
+RHS = (a ^ b) + 2 * (a & b)
+
+print("3(b) Result:", LHS == RHS)
+
+OUTPUT:
+Enter value for a: 15
+Enter value for b: 20
+Result: True
+
+Subtraction using Bitwise Operators
+
+1) a - b = (a ^ (a & b)) - ((a | b) ^ a)
+a = int(input("Enter value for a: "))
+b = int(input("Enter value for b: "))
+
+LHS = a - b
+RHS = (a ^ (a & b)) - ((a | b) ^ a)
+
+print("3(b) Result:", LHS == RHS)
+
+OUPUT:
+Enter value for a: 8
+Enter value for b: 9
+3(b) Result: True
+
+2) a - b = ((a | b) ^ b) - ((a + b) ^ a)
+a = int(input("Enter value for a: "))
+b = int(input("Enter value for b: "))
+
+LHS = a - b
+RHS = ((a | b) ^ b) - ((a + b) ^ a)
+
+print("2 Result:", LHS == RHS)
+
+OUPUT:
+Enter value for a: 10
+Enter value for b: 12
+2 Result: False
+
+3) a - b = (a ^ (a & b)) - (b ^ (a & b))
+a = int(input("Enter value for a: "))
+b = int(input("Enter value for b: "))
+
+
+LHS = a - b
+RHS = (a ^ (a & b)) - (b ^ (a & b))
+
+print("3 Result:", LHS == RHS)
+
+OUPUT:
+Enter value for a: 10
+Enter value for b: 2
+3 Result: True
+
+4) a - b = ((a | b) ^ b) - (b ^ (a & b))
+a = int(input("Enter value for a: "))
+b = int(input("Enter value for b: "))
+
+LHS = a - b
+RHS = ((a | b) ^ b) - (b ^ (a & b))
+
+print("4 Result:", LHS == RHS)
+
+OUPUT:
+Enter value for a: 12
+Enter value for b: 15
+4 Result: True
+
+
+
+
+
+
+
+
+
+
+
