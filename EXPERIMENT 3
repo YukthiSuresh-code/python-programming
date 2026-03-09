@@ -1,0 +1,45 @@
+str1=input("Enter a string: ")
+str2=input("Enter a string: ")
+
+print("Length: ", len(str1))
+print("Length: ", len(str2))
+
+print("First 3 letters : " ,str1[0:3])
+print("First 3 letters : ", str2[0:3])
+
+print("Fourth : ",str1[4])
+print("Fourth : ",str2[4])
+
+print("Uppercase: ", str1.upper())
+print("Uppercase: ", str2.upper())
+
+
+print("lowercase: ", str1.lower())
+print("lowercase: ", str2.lower())
+
+print("Reversed: ", str1[::-1])
+print("Reversed: ", str2[::-1])
+
+sub=input("Enter a string: ")
+if sub in str1:
+    print("Sub string present")
+
+    OUTPUT:
+    Enter a string: Python 
+Enter a string: Programming
+Length:  7
+Length:  11
+First 3 letters :  Pyt
+First 3 letters :  Pro
+Fourth :  o
+Fourth :  r
+Uppercase:  PYTHON 
+Uppercase:  PROGRAMMING
+lowercase:  python 
+lowercase:  programming
+Reversed:   nohtyP
+Reversed:  gnimmargorP
+Enter a string: thon
+Sub string present
+
+    
