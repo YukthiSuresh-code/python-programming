@@ -1,3 +1,35 @@
+ALGORITHM:
+Aim: To perform various string operations such as length, slicing, case conversion, reversing, and substring checking.
+
+Steps
+
+Start the program.
+
+Input the first string str1 from the user.
+
+Input the second string str2 from the user.
+
+Find the length of both strings using len() and display it.
+
+Extract the first three characters of both strings using slicing [0:3] and display them.
+
+Display the fourth character of both strings using indexing [4].
+
+Convert both strings to uppercase using .upper() and display them.
+
+Convert both strings to lowercase using .lower() and display them.
+
+Reverse both strings using slicing [::-1] and display them.
+
+Input another string sub from the user to check as a substring.
+
+Check if sub is present in str1 using the in operator.
+
+If present, display "Substring present".
+
+Stop the program.
+
+
 str1=input("Enter a string: ")
 str2=input("Enter a string: ")
 
