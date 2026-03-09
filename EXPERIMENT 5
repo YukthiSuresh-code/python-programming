@@ -1,0 +1,26 @@
+student = ("Yukthi", 19, "CSE", "Python", "Java", "Python")
+
+print("Length: ",len(student))
+
+student2=("Meera",20,"CSI","Java","C")
+
+t=student+student2
+print("final tuple: ",t)
+
+print("Index of meera: ",student2.count("Meera"))
+
+print("Length of the the tuple", len(student))
+print("Length of the the tuple", len(student2))
+
+print(student[0:3])
+print(student2[-1])
+
+
+OUTPUT:
+Length:  6
+final tuple:  ('Yukthi', 19, 'CSE', 'Python', 'Java', 'Python', 'Meera', 20, 'CSI', 'Java', 'C')
+Index of meera:  1
+Length of the the tuple 6
+Length of the the tuple 5
+('Yukthi', 19, 'CSE')
+C
