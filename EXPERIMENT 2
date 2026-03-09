@@ -1,3 +1,129 @@
+ALGORITHM:
+Aim: To evaluate a cricket player's batting, bowling, and fielding performance using conditional statements.
+
+Steps
+
+Start the program.
+
+Input the following values from the user:
+
+Runs scored
+
+Balls faced
+
+Number of fours
+
+Number of sixes
+
+Wickets taken
+
+Runs conceded
+
+Overs bowled
+
+Catches taken
+
+Calculate the Batting Strike Rate using the formula:
+
+Strike Rate
+=
+(
+𝑅
+𝑢
+𝑛
+𝑠
+/
+𝐵
+𝑎
+𝑙
+𝑙
+𝑠
+)
+×
+100
+Strike Rate=(Runs/Balls)×100
+
+Calculate the Bowling Economy Rate using the formula:
+
+Economy Rate
+=
+𝑅
+𝑢
+𝑛
+𝑠
+ 
+𝐶
+𝑜
+𝑛
+𝑐
+𝑒
+𝑑
+𝑒
+𝑑
+/
+𝑂
+𝑣
+𝑒
+𝑟
+𝑠
+Economy Rate=Runs Conceded/Overs
+
+Evaluate Batting Performance:
+
+If runs ≥ 50 and strike rate ≥ 120 → Excellent Batter
+
+Else if runs ≥ 30 and strike rate ≥ 100 → Good Batter
+
+Else if runs ≥ 20 → Average Batter
+
+Else → Poor Batter
+
+Evaluate Bowling Performance:
+
+If wickets ≥ 3 and economy ≤ 6 → Excellent Bowler
+
+Else if wickets ≥ 2 and economy ≤ 8 → Good Bowler
+
+Else if wickets ≥ 1 → Average Bowler
+
+Else → Poor Bowler
+
+Evaluate Fielding Performance:
+
+If catches ≥ 2 → Outstanding Fielder
+
+Else if catches = 1 → Active Fielder
+
+Else → Needs Improvement
+
+Determine Overall All-Rounder Performance:
+
+If batter is Excellent and bowler is Excellent → Star All-Rounder
+
+Else if batter is Good and bowler is Good → Strong All-Rounder
+
+Else if batter is Good or bowler is Good → Supporting All-Rounder
+
+Else → Needs Improvement
+
+Display:
+
+Strike Rate
+
+Economy Rate
+
+Batting Performance
+
+Bowling Performance
+
+Fielding Performance
+
+Overall All-Rounder Decision
+
+Stop the program.
+
+
+
 # Taking input from user
 
 runs = int(input("Enter runs scored: "))
