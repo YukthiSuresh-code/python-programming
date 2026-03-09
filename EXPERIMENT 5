@@ -1,3 +1,33 @@
+ALGORITHM:
+Aim: To demonstrate tuple operations and related functions in Python.
+
+Steps
+
+Start the program.
+
+Create a tuple student = ("Yukthi", 19, "CSE", "Python", "Java", "Python").
+
+Display the length of the tuple using len().
+
+Create another tuple **student2 = ("Meera", 20, "CSI", "Java", "C")`.
+
+Join both tuples using the concatenation operator + and store the result in t.
+
+Display the final joined tuple.
+
+Count the occurrence of "Meera" in the second tuple using count() and display it.
+
+Display the length of the first tuple using len().
+
+Display the length of the second tuple using len().
+
+Display the first three elements of the first tuple using slicing [0:3].
+
+Display the last element of the second tuple using negative indexing [-1].
+
+Stop the program.
+
+⚠️ Small correctio
 student = ("Yukthi", 19, "CSE", "Python", "Java", "Python")
 
 print("Length: ",len(student))
