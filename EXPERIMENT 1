@@ -1,3 +1,106 @@
+
+ALGORITHM: 
+Part A – Arithmetic Operators
+Algorithm
+
+Start the program.
+
+Input two integers a and b from the user.
+
+Calculate LHS = (a + b) × (a + b).
+
+Calculate RHS = a² + 2ab + b².
+
+Compare LHS and RHS and print the result.
+
+Calculate LHS = (a − b) × (a − b).
+
+Calculate RHS = a² − 2ab + b².
+
+Compare LHS and RHS and print the result.
+
+Calculate LHS = (a + b) × (a − b).
+
+Calculate RHS = a² − b².
+
+Compare LHS and RHS and print the result.
+
+Calculate LHS = (a + b) × (a + b).
+
+Calculate RHS = 2a² − b².
+
+Compare LHS and RHS and print the result.
+
+Part B – Bitwise Operators
+Algorithm
+
+Input two integers a and b.
+
+Compute LHS = a | b.
+
+Compute RHS = (a ^ b) + (a & b).
+
+Compare both results and print the output.
+
+Compute LHS = a ^ (a & b).
+
+Compute RHS = (a | b) ^ b.
+
+Compare and print the result.
+
+Compute LHS = b ^ (a & b).
+
+Compute RHS = (a | b) ^ a.
+
+Compare and print the result.
+
+Compute LHS = (a & b) ^ (a | b).
+
+Compute RHS = a ^ b.
+
+Compare and display the result.
+
+Part C – Addition Using Bitwise Operators
+Algorithm
+
+Input integers a and b.
+
+Compute LHS = a + b.
+
+Compute RHS = (a | b) + (a & b).
+
+Compare LHS and RHS and print the result.
+
+Compute RHS = (a ^ b) + 2 × (a & b).
+
+Compare with LHS and display the result.
+
+Part D – Subtraction Using Bitwise Operators
+Algorithm
+
+Input integers a and b.
+
+Compute LHS = a − b.
+
+Compute RHS = (a ^ (a & b)) − ((a | b) ^ a).
+
+Compare LHS and RHS and display the result.
+
+Compute RHS = ((a | b) ^ b) − ((a + b) ^ a).
+
+Compare and print the result.
+
+Compute RHS = (a ^ (a & b)) − (b ^ (a & b)).
+
+Compare and print the result.
+
+Compute RHS = ((a | b) ^ b) − (b ^ (a & b)).
+
+Compare and display the result.
+
+Stop the program.
+
+
 Experiment 1
 Arithematic operators
 # Input values
