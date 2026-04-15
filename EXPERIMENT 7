@@ -1,0 +1,152 @@
+QUESTION : Demonstrate use of object- oriented programming concepts 
+
+ALGORITHM:
+1.Start
+2.Define a class with attributes (course, campus)
+3.Create object and access attributes
+4.Define methods inside class and call using object
+5.Take input using constructor (__init__)
+6.Perform operations (like total marks)
+7.Demonstrate inheritance:
+8.Single inheritance (one parent → one child)
+9.Multilevel inheritance (chain of classes)
+10.Multiple inheritance (more than one parent)
+11.Call methods using objects
+12.Display output
+13.Stop
+
+
+CODE:
+1. Class with Objects
+
+class College:
+    course1 = "BCA"
+    course2 = "BCom"
+
+c = College()
+
+print("First course:", c.course1)
+print("Second course:", c.course2)
+
+2. Class with Method and Object
+
+class College:
+    course1 = "BCA"
+    course2 = "BCom"
+    campus1 = "Jayanagar"
+    campus2 = "VV Puram"
+
+    def university(self):
+        print("Each course is in different campus")
+        print(self.campus1, "offers", self.course1)
+        print(self.campus2, "offers", self.course2)
+
+c = College()
+c.university()
+
+3. Class with Input (Student Example)
+class Student:
+    def __init__(self):
+        self.name = input("Enter student name: ")
+        self.usn = input("Enter USN: ")
+        self.m1 = int(input("Enter marks 1: "))
+        self.m2 = int(input("Enter marks 2: "))
+        self.m3 = int(input("Enter marks 3: "))
+
+    def result(self):
+        total = self.m1 + self.m2 + self.m3
+        print("Student Result:", total)
+        print("Name:", self.name)
+        print("USN:", self.usn)
+
+s = Student()
+s.result()
+
+
+4. Multiple Inheritance
+class Teacher:
+    def one(self):
+        print("This is teacher of X grade")
+
+class Student:
+    def two(self):
+        print("This is student of X grade")
+
+class School(Teacher, Student):
+    def three(self):
+        print("Teacher and student belong to same school")
+
+obj = School()
+obj.one()
+obj.two()
+obj.three()
+
+5. Multilevel Inheritance
+
+class Father:
+    def relation(self):
+        name = input("Enter father name: ")
+        print("Father:", name)
+
+class Son(Father):
+    def relation(self):
+        age = int(input("Enter age: "))
+        print("Son age:", age)
+
+class Grandson(Son):
+    def relation(self):
+        asset = input("Enter asset: ")
+        print("Asset:", asset)
+
+f = Father()
+f.relation()
+
+s = Son()
+s.relation()
+
+g = Grandson()
+g.relation()
+
+6. Single Inheritance
+class State:
+    def geo(self):
+        print("This is Karnataka")
+
+class City(State):
+    def geo(self):
+        print("This is Bengaluru, Karnataka")
+
+c = City()
+c.geo()
+
+
+
+OUTPUT:
+First course: BCA
+Second course: BCom
+
+Each course is in different campus
+Jayanagar offers BCA
+VV Puram offers BCom
+
+Enter student name: Yukthi
+Enter USN: 24BCA0536
+Enter marks 1: 89
+Enter marks 2: 92
+Enter marks 3: 85
+Student Result: 266
+Name: Yukthi
+USN: 24BCA0536
+
+This is teacher of X grade
+This is student of X grade
+Teacher and student belong to same school
+
+Enter father name: Vishnu
+Father: Vishnu
+Enter age: 50
+Son age: 50
+Enter asset: Property
+Asset: Property
+
+This is Bengaluru, Karnataka
