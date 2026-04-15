@@ -1,0 +1,142 @@
+QUESTION: Write a program to demonstrate Dictionary & related functions in python 
+
+
+ALGORITHM
+Algorithm
+1.Start
+2.Create an empty dictionary
+3.Add employee names and phone numbers
+4.Display dictionary
+5.Add a new element
+6.Update an existing value
+7.Delete an element
+8.Display keys, values, and items
+9.Use get() to access specific value
+10.Traverse dictionary using loops
+11.Apply condition (check numbers starting with 9)
+12.Stop
+
+
+CODE 
+# Creating dictionary
+employee_ph = {}
+
+employee_ph["Siya"] = "9875214556"
+employee_ph["Manish"] = "9875746556"
+employee_ph["Shekhar"] = "9632514876"
+employee_ph["Jessica"] = "9238722524"
+
+print("Initial Dictionary:")
+print(employee_ph)
+
+Adding element
+
+employee_ph["Nayana"] = "8975245637"
+print("\nAfter Adding Nayana:")
+print(employee_ph)
+
+Updating element
+
+employee_ph["Shekhar"] = "8569175246"
+print("\nAfter Updating Shekhar:")
+print(employee_ph)
+
+ Deleting element
+
+del employee_ph["Jessica"]
+print("\nAfter Deleting Jessica:")
+print(employee_ph)
+
+ Printing values
+
+print("\nValues:")
+print(employee_ph.values())
+
+ Using get()
+
+print("\nPhone number of Manish:")
+print(employee_ph.get("Manish"))
+
+ Printing keys
+
+print("\nKeys:")
+print(employee_ph.keys())
+
+ Printing items
+
+print("\nItems:")
+print(employee_ph.items())
+
+ Loop through keys
+
+print("\nEmployee Names:")
+for key in employee_ph:
+    print(key)
+
+ Loop through values
+
+print("\nPhone Numbers:")
+for value in employee_ph.values():
+    print(value)
+
+ Keys and values together
+
+print("\nEmployee Details:")
+for key, value in employee_ph.items():
+    print("Name:", key, "| Phone:", value)
+
+ Condition check
+
+print("\nNumbers starting with 9:")
+for key, value in employee_ph.items():
+    if value.startswith("9"):
+        print(key, ":", value)
+
+
+
+OUTPUT:
+Initial Dictionary:
+{'Siya': '9875214556', 'Manish': '9875746556', 'Shekhar': '9632514876', 'Jessica': '9238722524'}
+
+After Adding Nayana:
+{'Siya': '9875214556', 'Manish': '9875746556', 'Shekhar': '9632514876', 'Jessica': '9238722524', 'Nayana': '8975245637'}
+
+After Updating Shekhar:
+{'Siya': '9875214556', 'Manish': '9875746556', 'Shekhar': '8569175246', 'Jessica': '9238722524', 'Nayana': '8975245637'}
+
+After Deleting Jessica:
+{'Siya': '9875214556', 'Manish': '9875746556', 'Shekhar': '8569175246', 'Nayana': '8975245637'}
+
+Values:
+dict_values(['9875214556', '9875746556', '8569175246', '8975245637'])
+
+Phone number of Manish:
+9875746556
+
+Keys:
+dict_keys(['Siya', 'Manish', 'Shekhar', 'Nayana'])
+
+Items:
+dict_items([('Siya', '9875214556'), ('Manish', '9875746556'), ('Shekhar', '8569175246'), ('Nayana', '8975245637')])
+
+Employee Names:
+Siya
+Manish
+Shekhar
+Nayana
+
+Phone Numbers:
+9875214556
+9875746556
+8569175246
+8975245637
+
+Employee Details:
+Name: Siya | Phone: 9875214556
+Name: Manish | Phone: 9875746556
+Name: Shekhar | Phone: 8569175246
+Name: Nayana | Phone: 8975245637
+
+Numbers starting with 9:
+Siya : 9875214556
+Manish : 9875746556
