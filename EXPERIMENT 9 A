@@ -1,0 +1,62 @@
+QUESTION: a. Write a program to implement numpy and pandas packages. 
+
+ALGORITHM:
+
+1.Start
+2.Import NumPy and Pandas libraries
+3.Create a NumPy array
+4.Perform operations like sum, mean, max, and min
+5.Reshape the array and perform matrix operations
+6.Create a dictionary dataset
+7.Convert dictionary into Pandas DataFrame
+8.Access columns and display summary
+9.Add a new column
+10.Filter and sort the data
+11.Display results
+12.Stop
+
+CODE:
+import numpy as np
+import pandas as pd
+
+print("----- NUMPY OPERATIONS -----")
+
+arr = np.array([1, 2, 3, 4, 5])
+print("Array:", arr)
+
+print("Sum:", np.sum(arr))
+print("Mean:", np.mean(arr))
+print("Max:", np.max(arr))
+print("Min:", np.min(arr))
+
+arr2 = arr.reshape(5, 1)
+print("Reshaped Array:\n", arr2)
+
+matrix = np.array([[1, 2], [3, 4]])
+print("Matrix:\n", matrix)
+
+print("Transpose:\n", matrix.T)
+print("Matrix Multiplication:\n", np.dot(matrix, matrix))
+
+
+print("\n----- PANDAS OPERATIONS -----")
+
+data = {
+    "Name": ["Yukthi", "Manish", "Siya"],
+    "Marks": [85, 90, 88],
+    "City": ["Chennai", "Delhi", "Mumbai"]
+}
+
+df = pd.DataFrame(data)
+print("DataFrame:\n", df)
+
+print("\nNames:\n", df["Name"])
+
+print("\nSummary:\n", df.describe())
+
+df["Grade"] = ["A", "A+", "A"]
+print("\nAfter Adding Column:\n", df)
+
+print("\nStudents with Marks > 85:\n", df[df["Marks"] > 85])
+
+print("\nSorted by Marks:\n", df.sort_values(by="Marks"))
