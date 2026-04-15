@@ -1,0 +1,125 @@
+QUESTION: Implement ‘re’ module in python 
+
+ALGORITHM:
+
+1.Start
+2.Import re module
+3.Define a string containing text, number, and email
+4.Use search() to find first match
+5.Use findall() to extract all patterns
+6.Use match() to check beginning of string
+7.Use sub() to replace patterns
+8.Use split() to divide string
+9.Extract specific patterns (email, words)
+10.Display all outputs
+11.Stop
+
+CODE:
+import re
+
+# Input string
+text = "Hello Yukthi, your phone number is 9876543210 and email is yukthi123@gmail.com"
+
+print("Original Text:")
+print(text)
+
+ SEARCH 
+
+ Search for first occurrence of a 10-digit number
+
+print("\nUsing search():")
+search_result = re.search(r"\d{10}", text)
+if search_result:
+    print("Phone number found:", search_result.group())
+else:
+    print("No phone number found")
+
+ FINDALL 
+
+ Find all digits in the string
+print("\nUsing findall():")
+all_digits = re.findall(r"\d", text)
+print("All digits:", all_digits)
+
+ Find all words
+words = re.findall(r"\w+", text)
+print("All words:", words)
+
+MATCH 
+
+ Check if string starts with 'Hello'
+print("\nUsing match():")
+match_result = re.match(r"Hello", text)
+if match_result:
+    print("Text starts with 'Hello'")
+else:
+    print("No match at beginning")
+
+ SUBSTITUTE
+
+Replace digits with '*'
+
+print("\nUsing sub():")
+new_text = re.sub(r"\d", "*", text)
+print("After replacing digits:", new_text)
+
+# Replace email domain
+email_changed = re.sub(r"gmail.com", "example.com", text)
+print("After replacing domain:", email_changed)
+
+SPLIT
+
+ Split string by spaces
+
+print("\nUsing split():")
+split_text = re.split(r"\s", text)
+print("Split words:", split_text)
+
+ Split using comma
+
+split_comma = re.split(r",", text)
+print("Split using comma:", split_comma)
+
+ EXTRA PATTERNS 
+
+ Find email
+
+print("\nExtract Email:")
+email = re.search(r"\S+@\S+", text)
+if email:
+    print("Email found:", email.group())
+
+ Find words starting with 'y'
+
+print("\nWords starting with 'y':")
+y_words = re.findall(r"\by\w*", text, re.IGNORECASE)
+print(y_words)
+
+OUTPUT:
+
+Original Text:
+Hello Yukthi, your phone number is 9876543210 and email is yukthi123@gmail.com
+
+Using search():
+Phone number found: 9876543210
+
+Using findall():
+All digits: ['9','8','7','6','5','4','3','2','1','0','1','2','3']
+All words: ['Hello','Yukthi','your','phone','number','is','9876543210','and','email','is','yukthi123','gmail','com']
+
+Using match():
+Text starts with 'Hello'
+
+Using sub():
+After replacing digits: Hello Yukthi, your phone number is ********** and email is yukthi***@gmail.com
+After replacing domain: Hello Yukthi, your phone number is 9876543210 and email is yukthi123@example.com
+
+Using split():
+Split words: ['Hello','Yukthi,','your','phone','number','is','9876543210','and','email','is','yukthi123@gmail.com']
+Split using comma: ['Hello Yukthi', ' your phone number is 9876543210 and email is yukthi123@gmail.com']
+
+Extract Email:
+Email found: yukthi123@gmail.com
+
+Words starting with 'y':
+['Yukthi', 'your', 'yukthi123']
