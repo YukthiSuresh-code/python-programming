@@ -16,4 +16,80 @@ Display all graphs using plt.show().
 Stop the program.
 
 CODE:
+# Program to implement various types of visualization in Python
+
+# Importing libraries
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Creating sample data
+data = {
+    "Month": ["Jan", "Feb", "Mar", "Apr", "May"],
+    "Sales": [200, 250, 300, 280, 350],
+    "Profit": [40, 50, 70, 60, 80],
+    "Expenses": [160, 200, 230, 220, 270]
+}
+
+# Creating DataFrame
+df = pd.DataFrame(data)
+
+# Displaying DataFrame
+print("COMPANY DATA")
+print(df)
+
+# ---------------- LINE GRAPH ----------------
+plt.figure(figsize=(8,5))
+
+plt.plot(df["Month"], df["Sales"], marker='o', label="Sales")
+plt.plot(df["Month"], df["Profit"], marker='s', label="Profit")
+
+plt.title("Line Graph")
+plt.xlabel("Month")
+plt.ylabel("Amount")
+plt.legend()
+plt.grid(True)
+
+plt.show()
+
+# ---------------- BAR GRAPH ----------------
+plt.figure(figsize=(8,5))
+
+plt.bar(df["Month"], df["Expenses"])
+
+plt.title("Bar Graph")
+plt.xlabel("Month")
+plt.ylabel("Expenses")
+
+plt.show()
+
+# ---------------- HISTOGRAM ----------------
+plt.figure(figsize=(8,5))
+
+plt.hist(df["Sales"], bins=5)
+
+plt.title("Histogram")
+plt.xlabel("Sales")
+plt.ylabel("Frequency")
+
+plt.show()
+
+# ---------------- PIE CHART ----------------
+plt.figure(figsize=(6,6))
+
+plt.pie(df["Profit"], labels=df["Month"], autopct='%1.1f%%')
+
+plt.title("Pie Chart of Profit")
+
+plt.show()
+
+# ---------------- SCATTER PLOT ----------------
+plt.figure(figsize=(8,5))
+
+plt.scatter(df["Sales"], df["Profit"])
+
+plt.title("Scatter Plot")
+plt.xlabel("Sales")
+plt.ylabel("Profit")
+
+plt.show()
 
