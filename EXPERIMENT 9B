@@ -1,0 +1,71 @@
+Write a program to implement Matplotlib and Pandas libraries in python 
+
+ALGORITHM:
+
+Implementing Pandas and Matplotlib in Python
+Start the program.
+Import the required libraries:
+Pandas
+Matplotlib.pyplot
+Create data using a dictionary with 4 columns:
+Month
+Sales
+Profit
+Expenses
+Create a DataFrame using Pandas.
+Display the DataFrame.
+Create a line graph using Matplotlib:
+Plot Month vs Sales
+Plot Month vs Profit
+Add:
+Title
+X-axis label
+Y-axis label
+Legend
+Grid
+Display the graph using plt.show().
+Stop the program.
+
+
+CODE:
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Creating data with 4 columns
+data = {
+    "Month": ["Jan", "Feb", "Mar", "Apr", "May"],
+    "Sales": [250, 300, 280, 350, 400],
+    "Profit": [50, 70, 65, 80, 90],
+    "Expenses": [200, 230, 215, 270, 310]
+}
+
+# Creating DataFrame using Pandas
+df = pd.DataFrame(data)
+
+# Displaying DataFrame
+print("COMPANY SALES DATA")
+print(df)
+
+# ---------------- LINE GRAPH ----------------
+plt.figure(figsize=(8,5))
+
+plt.plot(df["Month"], df["Sales"], marker='o', label="Sales")
+plt.plot(df["Month"], df["Profit"], marker='s', label="Profit")
+
+plt.title("Monthly Sales and Profit")
+plt.xlabel("Months")
+plt.ylabel("Amount")
+plt.legend()
+plt.grid(True)
+
+plt.show()
+
+OUTPUT:
+COMPANY SALES DATA
+  Month  Sales  Profit  Expenses
+0   Jan    250      50       200
+1   Feb    300      70       230
+2   Mar    280      65       215
+3   Apr    350      80       270
+4   May    400      90       310
+
