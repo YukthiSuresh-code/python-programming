@@ -1,0 +1,19 @@
+Write a Program to implement various types of visualization in python. 
+
+
+ALGORITHM:
+Start the program.
+Import Pandas and Matplotlib libraries.
+Create sample data using a dictionary.
+Convert the data into a Pandas DataFrame.
+Display the dataset.
+Create a Line Graph for Sales and Profit.
+Create a Bar Graph for Expenses.
+Create a Histogram for Sales distribution.
+Create a Pie Chart for Profit distribution.
+Create a Scatter Plot for Sales vs Profit.
+Display all graphs using plt.show().
+Stop the program.
+
+CODE:
+
